@@ -3,6 +3,8 @@
 #ifndef TESTS_H
 #define TESTS_H
 
+#include "Sorter.h"
+
 // Генерация элемента случайным образом
 template <class Type>
 void InitElement(Type &el) {

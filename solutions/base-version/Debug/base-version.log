@@ -1,0 +1,159 @@
+﻿Build started 23.10.2015 20:55:12.
+     1>Project "D:\Git_Console\templates2\solutions\base-version\base-version.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         D:\Visual Studio 2012 Express\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt src\main.cpp
+         main.cpp
+     1>d:\git_console\templates2\solutions\base-version\src\complex.h(27): fatal error C1060: compiler is out of heap space
+                 d:\git_console\templates2\solutions\base-version\src\main.cpp(11) : see reference to class template instantiation 'Complex<Type>' being compiled
+                 with
+                 [
+                     Type=Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<int>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                 ]
+                 d:\git_console\templates2\solutions\base-version\src\main.cpp(10) : see reference to function template instantiation 'void co<Complex<Type>>(Complex<Type>,int)' being compiled
+                 with
+                 [
+                     Type=Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<int>>>>>>>>>>>>>>>>>>>>>>>>>>
+                 ]
+                 d:\git_console\templates2\solutions\base-version\src\main.cpp(10) : see reference to function template instantiation 'void co<Complex<Type>>(Complex<Type>,int)' being compiled
+                 with
+                 [
+                     Type=Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<int>>>>>>>>>>>>>>>>>>>>>>>>>
+                 ]
+                 d:\git_console\templates2\solutions\base-version\src\main.cpp(10) : see reference to function template instantiation 'void co<Complex<Type>>(Complex<Type>,int)' being compiled
+                 with
+                 [
+                     Type=Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<int>>>>>>>>>>>>>>>>>>>>>>>>
+                 ]
+                 d:\git_console\templates2\solutions\base-version\src\main.cpp(10) : see reference to function template instantiation 'void co<Complex<Type>>(Complex<Type>,int)' being compiled
+                 with
+                 [
+                     Type=Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<int>>>>>>>>>>>>>>>>>>>>>>>
+                 ]
+                 d:\git_console\templates2\solutions\base-version\src\main.cpp(10) : see reference to function template instantiation 'void co<Complex<Type>>(Complex<Type>,int)' being compiled
+                 with
+                 [
+                     Type=Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<int>>>>>>>>>>>>>>>>>>>>>>
+                 ]
+                 d:\git_console\templates2\solutions\base-version\src\main.cpp(10) : see reference to function template instantiation 'void co<Complex<Type>>(Complex<Type>,int)' being compiled
+                 with
+                 [
+                     Type=Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<int>>>>>>>>>>>>>>>>>>>>>
+                 ]
+                 d:\git_console\templates2\solutions\base-version\src\main.cpp(10) : see reference to function template instantiation 'void co<Complex<Type>>(Complex<Type>,int)' being compiled
+                 with
+                 [
+                     Type=Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<int>>>>>>>>>>>>>>>>>>>>
+                 ]
+                 d:\git_console\templates2\solutions\base-version\src\main.cpp(10) : see reference to function template instantiation 'void co<Complex<Type>>(Complex<Type>,int)' being compiled
+                 with
+                 [
+                     Type=Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<int>>>>>>>>>>>>>>>>>>>
+                 ]
+                 d:\git_console\templates2\solutions\base-version\src\main.cpp(10) : see reference to function template instantiation 'void co<Complex<Type>>(Complex<Type>,int)' being compiled
+                 with
+                 [
+                     Type=Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<int>>>>>>>>>>>>>>>>>>
+                 ]
+                 d:\git_console\templates2\solutions\base-version\src\main.cpp(10) : see reference to function template instantiation 'void co<Complex<Type>>(Complex<Type>,int)' being compiled
+                 with
+                 [
+                     Type=Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<int>>>>>>>>>>>>>>>>>
+                 ]
+                 d:\git_console\templates2\solutions\base-version\src\main.cpp(10) : see reference to function template instantiation 'void co<Complex<Type>>(Complex<Type>,int)' being compiled
+                 with
+                 [
+                     Type=Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<int>>>>>>>>>>>>>>>>
+                 ]
+                 d:\git_console\templates2\solutions\base-version\src\main.cpp(10) : see reference to function template instantiation 'void co<Complex<Type>>(Complex<Type>,int)' being compiled
+                 with
+                 [
+                     Type=Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<int>>>>>>>>>>>>>>>
+                 ]
+                 d:\git_console\templates2\solutions\base-version\src\main.cpp(10) : see reference to function template instantiation 'void co<Complex<Type>>(Complex<Type>,int)' being compiled
+                 with
+                 [
+                     Type=Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<int>>>>>>>>>>>>>>
+                 ]
+                 d:\git_console\templates2\solutions\base-version\src\main.cpp(10) : see reference to function template instantiation 'void co<Complex<Type>>(Complex<Type>,int)' being compiled
+                 with
+                 [
+                     Type=Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<int>>>>>>>>>>>>>
+                 ]
+                 d:\git_console\templates2\solutions\base-version\src\main.cpp(10) : see reference to function template instantiation 'void co<Complex<Type>>(Complex<Type>,int)' being compiled
+                 with
+                 [
+                     Type=Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<int>>>>>>>>>>>>
+                 ]
+                 d:\git_console\templates2\solutions\base-version\src\main.cpp(10) : see reference to function template instantiation 'void co<Complex<Type>>(Complex<Type>,int)' being compiled
+                 with
+                 [
+                     Type=Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<int>>>>>>>>>>>
+                 ]
+                 d:\git_console\templates2\solutions\base-version\src\main.cpp(10) : see reference to function template instantiation 'void co<Complex<Type>>(Complex<Type>,int)' being compiled
+                 with
+                 [
+                     Type=Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<int>>>>>>>>>>
+                 ]
+                 d:\git_console\templates2\solutions\base-version\src\main.cpp(10) : see reference to function template instantiation 'void co<Complex<Type>>(Complex<Type>,int)' being compiled
+                 with
+                 [
+                     Type=Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<int>>>>>>>>>
+                 ]
+                 d:\git_console\templates2\solutions\base-version\src\main.cpp(10) : see reference to function template instantiation 'void co<Complex<Type>>(Complex<Type>,int)' being compiled
+                 with
+                 [
+                     Type=Complex<Complex<Complex<Complex<Complex<Complex<Complex<Complex<int>>>>>>>>
+                 ]
+                 d:\git_console\templates2\solutions\base-version\src\main.cpp(10) : see reference to function template instantiation 'void co<Complex<Type>>(Complex<Type>,int)' being compiled
+                 with
+                 [
+                     Type=Complex<Complex<Complex<Complex<Complex<Complex<Complex<int>>>>>>>
+                 ]
+                 d:\git_console\templates2\solutions\base-version\src\main.cpp(10) : see reference to function template instantiation 'void co<Complex<Type>>(Complex<Type>,int)' being compiled
+                 with
+                 [
+                     Type=Complex<Complex<Complex<Complex<Complex<Complex<int>>>>>>
+                 ]
+                 d:\git_console\templates2\solutions\base-version\src\main.cpp(10) : see reference to function template instantiation 'void co<Complex<Type>>(Complex<Type>,int)' being compiled
+                 with
+                 [
+                     Type=Complex<Complex<Complex<Complex<Complex<int>>>>>
+                 ]
+                 d:\git_console\templates2\solutions\base-version\src\main.cpp(10) : see reference to function template instantiation 'void co<Complex<Type>>(Complex<Type>,int)' being compiled
+                 with
+                 [
+                     Type=Complex<Complex<Complex<Complex<int>>>>
+                 ]
+                 d:\git_console\templates2\solutions\base-version\src\main.cpp(10) : see reference to function template instantiation 'void co<Complex<Type>>(Complex<Type>,int)' being compiled
+                 with
+                 [
+                     Type=Complex<Complex<Complex<int>>>
+                 ]
+                 d:\git_console\templates2\solutions\base-version\src\main.cpp(10) : see reference to function template instantiation 'void co<Complex<Type>>(Complex<Type>,int)' being compiled
+                 with
+                 [
+                     Type=Complex<Complex<int>>
+                 ]
+                 d:\git_console\templates2\solutions\base-version\src\main.cpp(10) : see reference to function template instantiation 'void co<Complex<Type>>(Complex<Type>,int)' being compiled
+                 with
+                 [
+                     Type=Complex<int>
+                 ]
+                 d:\git_console\templates2\solutions\base-version\src\main.cpp(10) : see reference to function template instantiation 'void co<Complex<Type>>(Complex<Type>,int)' being compiled
+                 with
+                 [
+                     Type=int
+                 ]
+                 d:\git_console\templates2\solutions\base-version\src\main.cpp(26) : see reference to function template instantiation 'void co<int>(Type,int)' being compiled
+                 with
+                 [
+                     Type=int
+                 ]
+     1>c1xx : fatal error C1063: INTERNAL COMPILER ERROR
+                  Please choose the Technical Support command on the Visual C++ 
+                  Help menu, or open the Technical Support help file for more information
+     1>Done Building Project "D:\Git_Console\templates2\solutions\base-version\base-version.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:31:32.71

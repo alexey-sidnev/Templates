@@ -11,7 +11,13 @@ class Complex {
  public:
   Type re_, im_;
 
-  Complex(Type re = 0, Type im = 0): re_(re), im_(im)
+  Complex()
+  {
+	  init(*this);
+  }
+
+
+  Complex(Type re, Type im): re_(re), im_(im)
   {}
 
   std::ostream& Print(std::ostream& o) const {
@@ -23,6 +29,19 @@ class Complex {
 template <class Type>
 std::ostream& operator<<(std::ostream& o, const Complex<Type>& instance) {
   return instance.Print(o);
+}
+
+template <class Type>
+void init(Type& a)
+{
+	a=0;
+}
+
+template <class Type>
+void init(Complex<Type>& a)
+{
+	init(a.im_);
+	init(a.re_);
 }
 
 #endif  // COMPLEX_H

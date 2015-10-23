@@ -79,6 +79,7 @@
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Sorter.h" />
     <ClInclude Include="src\Complex.h" />
     <ClInclude Include="src\tests.h" />
   </ItemGroup>
