@@ -13,7 +13,7 @@ template<typename Type>
   template <class Type>
 	 int comp(Complex<Type>& a,Complex<Type>& b)
 	{
-		return (comp(a.im_,b.im_));//)||comp(a.re_,b.re_));
+		return (comp(a.re_,b.re_));//)||comp(a.re_,b.re_));
 	}
 
 
@@ -37,7 +37,7 @@ class Sorter
 					t=mas[i];
 					mas[i]=mas[j];
 					mas[j]=t;
-					
+
 				}
 
 			}
