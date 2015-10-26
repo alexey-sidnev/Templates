@@ -32,8 +32,8 @@ void InitElement<char>(char *el) {
 template <class Type>
 void InitElement(Complex<Type> *el) {
   Type re, im;
-  InitElement(re);
-  InitElement(im);
+  InitElement(&re);
+  InitElement(&im);
   *el = Complex<Type>(re, im);
 }
 
