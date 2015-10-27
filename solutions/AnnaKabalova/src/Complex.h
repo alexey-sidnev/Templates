@@ -25,4 +25,4 @@ std::ostream& operator<<(std::ostream& o, const Complex<Type>& instance) {
   return instance.Print(o);
 }
 
-#endif  // SOLUTIONS_ANNAKABALOVA_SRC_COMPLEX_H_
+#endif // SOLUTIONS_ANNAKABALOVA_SRC_COMPLEX_H_
