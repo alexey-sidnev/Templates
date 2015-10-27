@@ -1,7 +1,7 @@
 #pragma once
 
-#ifndef TESTS_H
-#define TESTS_H
+#ifndef SOLUTIONS_ZHORIN_SRC_TESTS_H_
+#define SOLUTIONS_ZHORIN_SRC_TESTS_H_
 #include "Sorter.h"
 // Генерация элемента случайным образом
 template <class Type>
@@ -66,4 +66,4 @@ void CheckSort(int size) {
   delete[] mas;
 }
 
-#endif  // TESTS_H
+#endif  // SOLUTIONS_ZHORIN_SRC_TESTS_H_
