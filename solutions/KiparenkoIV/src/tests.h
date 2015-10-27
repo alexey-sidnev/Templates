@@ -6,36 +6,36 @@
 
 // Ãåíåðàöèÿ ýëåìåíòà ñëó÷àéíûì îáðàçîì
 template <class Type>
-void InitElement(const Type &el) {
-  el = Type(rand());
+void InitElement(Type *el) {
+  *el = Type(rand());
 }
 
 // Ñïåöèàëèçàöèÿ äëÿ òèïà double
 template<>
-void InitElement<double>(const double &el) {
-  el = (rand() / 2. - RAND_MAX) / (rand() + 1.);
+void InitElement<double>(double *el) {
+  *el = (rand() / 2. - RAND_MAX) / (rand() + 1.);
 }
 
 // Ñïåöèàëèçàöèÿ äëÿ òèïà float
 template<>
-void InitElement<float>(const float &el) {
-  el = (rand() / 2.f - RAND_MAX) / (rand() + 1.f);
+void InitElement<float>(float *el) {
+  *el = (rand() / 2.f - RAND_MAX) / (rand() + 1.f);
 }
 
 // Ñïåöèàëèçàöèÿ äëÿ òèïà char
 // Òîëüêî çàãëàâíûå àíãëèéñêèå áóêâû
 template<>
-void InitElement<char>(const char &el) {
-  el = rand() % 26 + 65;
+void InitElement<char>(char *el) {
+  *el = rand() % 26 + 65;
 }
 
 // Ãåíåðàöèÿ ýëåìåíòà ñëó÷àéíûì îáðàçîì òèïà Complex
 template <class Type>
-void InitElement(const Complex<Type> &el) {
+void InitElement(Complex<Type> *el) {
   Type re, im;
   InitElement(re);
   InitElement(im);
-  el = Complex<Type>(re, im);
+  *el = Complex<Type>(re, im);
 }
 
 // Èíèöèàëèçàöèÿ ìàññèâà ñëó÷àéíûì îáðàçîì
