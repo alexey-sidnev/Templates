@@ -11,7 +11,7 @@ class Sorter {
         int i, j;
         for (i = 0; i < size; i++) {
             for (j = i+1; j < size; j++) {
-                if(compare (mas[j], mas[i])) {
+                if (compare(mas[j], mas[i])) {
                 tmp = mas[i];
                 mas[i] = mas[j];
                 mas[j] = tmp;
@@ -37,6 +37,15 @@ int compare(Complex<Type> a, Complex <Type> b) {
             return 1;
         else
             return 0;
+}
+
+template <class Type>
+int compare(Complex<Complex<Type>> a, Complex<Complex<Type>> b) {
+    if (compare(a.re_, b.re_)) return 1;
+    else
+        if ((a.re_.re_ == b.re_.re_) && (a.re_.im_ == b.re_.im_) && (compare(a.im_, b.im_)))
+            return 1;
+    return 0;
 }
 
 #endif  // SOLUTIONS_ROZHNOVA_SRC_SORTER_H_
