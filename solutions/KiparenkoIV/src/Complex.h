@@ -14,15 +14,13 @@ class Complex {
   explicit Complex(Type re = Type(0), Type im = Type(0)): re_(re), im_(im)
   {}
 
-  std::ostream& Print(std::ostream& o) const {
+  template <class Type>
+  std::ostream& operator<<(std::ostream& o, const Complex<Type>& instance) {
     o << "<"<< re_ << ", " << im_ << ">";
     return o;
   }
 };
 
-template <class Type>
-std::ostream& operator<<(std::ostream& o, const Complex<Type>& instance) {
-  return instance.Print(o);
-}
+
 
 #endif  // SOLUTIONS_KIPARENKOIV_SRC_COMPLEX_H_
