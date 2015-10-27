@@ -46,7 +46,7 @@ template<class Type>
 bool MyCompare(const Complex<Complex<Type>> &a,
 const Complex<Complex<Type>> &b) {
   if (MyCompare(a.re_, b.re_))
-   return true;
+    return true;
   if (Eq(a.re_, b.re_) && MyCompare(a.im_, b.im_))
     return true;
   return false;
