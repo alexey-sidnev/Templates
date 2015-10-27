@@ -1,8 +1,8 @@
 #pragma once  // Только для Microsoft compiler
 
 // Include guard
-#ifndef COMPLEX_H
-#define COMPLEX_H
+#ifndef SOLUTIONS_ZHORIN_SRC_COMPLEX_H_
+#define SOLUTIONS_ZHORIN_SRC_COMPLEX_H_
 
 #include <iostream>
 
@@ -25,5 +25,4 @@ template <class Type>
 std::ostream& operator<<(std::ostream& o, const Complex<Type>& instance) {
   return instance.Print(o);
 }
-
-#endif  // COMPLEX_H
+#endif  // SOLUTIONS_ZHORIN_SRC_COMPLEX_H_
