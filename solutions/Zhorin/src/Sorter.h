@@ -15,7 +15,6 @@ class Sorter{
        Type tmp = a[i];
        a[i] = a[j];
        a[j] = tmp;
-
       }
    }
 };
@@ -26,6 +25,7 @@ bool MyCompare(const Type &a, const Type &b) {
    return true;
   return false;
 }
+
 template<class Type>
 bool MyCompare(const Complex<Type> &a, const Complex<Type> &b) {
   if (a.re_ > b.re_)
@@ -34,18 +34,22 @@ bool MyCompare(const Complex<Type> &a, const Complex<Type> &b) {
    return true;
   return false;
 }
+
 template<class Type>
 bool Eq(const Complex<Type> &a, const Complex<Type> &b) {
   if (a.re_ == b.re_ && a.im_ == b.im_)
    return true;
   return false;
 }
+
 template<class Type>
-bool MyCompare(const Complex<Complex<Type>> &a, const Complex<Complex<Type>> &b) {
+bool MyCompare(const Complex<Complex<Type>> &a, 
+const Complex<Complex<Type>> &b) {
   if (MyCompare(a.re_, b.re_))
    return true;
   if (Eq(a.re_, b.re_) && MyCompare(a.im_, b.im_))
    return true;
   return false;
 }
+
 #endif  // SOLUTIONS_ZHORIN_SRC_SORTER_H_
