@@ -14,7 +14,7 @@ class Complex {
   Complex(Type re = 0, Type im = 0): re_(re), im_(im)
   {}
 
-  std::ostream& Print(const std::ostream& o) const {
+  std::ostream& Print(std::ostream& o) const {
     o << "<"<< re_ << ", " << im_ << ">";
     return o;
   }
