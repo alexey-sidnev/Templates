@@ -17,7 +17,7 @@ class Complex {
 template <class Type>
 std::ostream& operator<<(std::ostream& o, const Complex<Type>& instance) {
   o << "<" << instance.re_ << ", " << instance.im_ << ">";
-   return o;
+    return o;
 }
 
 #endif  // SOLUTIONS_ZHORIN_SRC_COMPLEX_H_
