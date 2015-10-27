@@ -20,7 +20,7 @@ class Sorter {
     Type t;
     for (int i = 0; i < size; i++) {
       for (int j = i+1; j < size; j++) {
-	if (comp(mas[i], mas[j])) {
+        if (comp(mas[i], mas[j])) {
           t = mas[i];
           mas[i] = mas[j];
           mas[j] = t;
