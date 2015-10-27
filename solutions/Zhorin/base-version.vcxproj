@@ -80,6 +80,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Complex.h" />
+    <ClInclude Include="src\Sorter.h" />
     <ClInclude Include="src\tests.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
