@@ -1,58 +1,58 @@
 #pragma once
 
-#ifndef TESTS_H
-#define TESTS_H
+#ifndef SOLUTIONS_KIPARENKOIV_SRC_TESTS_H_
+#define SOLUTIONS_KIPARENKOIV_SRC_TESTS_H_
 #include "Sorter.h"
 
-// Генерация элемента случайным образом
+// ГѓГҐГ­ГҐГ°Г Г¶ГЁГї ГЅГ«ГҐГ¬ГҐГ­ГІГ  Г±Г«ГіГ·Г Г©Г­Г»Г¬ Г®ГЎГ°Г Г§Г®Г¬
 template <class Type>
-void InitElement(Type &el) {
+void InitElement(const Type &el) {
   el = Type(rand());
 }
 
-// Специализация для типа double
+// Г‘ГЇГҐГ¶ГЁГ Г«ГЁГ§Г Г¶ГЁГї Г¤Г«Гї ГІГЁГЇГ  double
 template<>
-void InitElement<double>(double &el) {
+void InitElement<double>(const double &el) {
   el = (rand() / 2. - RAND_MAX) / (rand() + 1.);
 }
 
-// Специализация для типа float
+// Г‘ГЇГҐГ¶ГЁГ Г«ГЁГ§Г Г¶ГЁГї Г¤Г«Гї ГІГЁГЇГ  float
 template<>
-void InitElement<float>(float &el) {
+void InitElement<float>(const float &el) {
   el = (rand() / 2.f - RAND_MAX) / (rand() + 1.f);
 }
 
-// Специализация для типа char
-// Только заглавные английские буквы
+// Г‘ГЇГҐГ¶ГЁГ Г«ГЁГ§Г Г¶ГЁГї Г¤Г«Гї ГІГЁГЇГ  char
+// Г’Г®Г«ГјГЄГ® Г§Г ГЈГ«Г ГўГ­Г»ГҐ Г Г­ГЈГ«ГЁГ©Г±ГЄГЁГҐ ГЎГіГЄГўГ»
 template<>
-void InitElement<char>(char &el) {
+void InitElement<char>(const char &el) {
   el = rand() % 26 + 65;
 }
 
-// Генерация элемента случайным образом типа Complex
+// ГѓГҐГ­ГҐГ°Г Г¶ГЁГї ГЅГ«ГҐГ¬ГҐГ­ГІГ  Г±Г«ГіГ·Г Г©Г­Г»Г¬ Г®ГЎГ°Г Г§Г®Г¬ ГІГЁГЇГ  Complex
 template <class Type>
-void InitElement(Complex<Type> &el) {
+void InitElement(const Complex<Type> &el) {
   Type re, im;
   InitElement(re);
   InitElement(im);
   el = Complex<Type>(re, im);
 }
 
-// Инициализация массива случайным образом
+// Г€Г­ГЁГ¶ГЁГ Г«ГЁГ§Г Г¶ГЁГї Г¬Г Г±Г±ГЁГўГ  Г±Г«ГіГ·Г Г©Г­Г»Г¬ Г®ГЎГ°Г Г§Г®Г¬
 template <class Type>
 void InitArray(Type *mas, int size) {
   for (int i = 0; i < size; ++i)
     InitElement(mas[i]);
 }
 
-// Вывод массива на экран
+// Г‚Г»ГўГ®Г¤ Г¬Г Г±Г±ГЁГўГ  Г­Г  ГЅГЄГ°Г Г­
 template <class Type>
 void PrintArray(Type *mas, int size) {
   for (int i = 0; i < size; ++i)
     std::cout << "  [" << i << "]=" << mas[i] << std::endl;
 }
 
-// Проверка для заданного типа
+// ГЏГ°Г®ГўГҐГ°ГЄГ  Г¤Г«Гї Г§Г Г¤Г Г­Г­Г®ГЈГ® ГІГЁГЇГ 
 template <class Type>
 void CheckSort(int size) {
   Type *mas = new Type[size];
@@ -67,4 +67,4 @@ void CheckSort(int size) {
   delete[] mas;
 }
 
-#endif  // TESTS_H
+#endif  // SOLUTIONS_KIPARENKOIV_SRC_TESTS_H_
