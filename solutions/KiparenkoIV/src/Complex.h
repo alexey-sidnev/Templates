@@ -17,7 +17,7 @@ class Complex {
 
 template <class Type>
 std::ostream& operator<<(std::ostream& o, const Complex<Type>& instance) {
-  o << "<"<< re_ << ", " << im_ << ">";
+  o << "<"<< instance.re_ << ", " << instance.im_ << ">";
   return o;
 }
 
