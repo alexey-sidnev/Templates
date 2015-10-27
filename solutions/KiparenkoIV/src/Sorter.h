@@ -25,7 +25,6 @@ class Sorter {
           mas[i] = mas[j];
           mas[j] = t;
         }
-       }
       }
     }
   }
