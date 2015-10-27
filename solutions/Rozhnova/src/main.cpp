@@ -11,9 +11,9 @@ int main() {
   CheckSort<char>(10);
   CheckSort<float>(10);
   CheckSort<double>(10);
- CheckSort<Complex<float>>(10);
+  CheckSort<Complex<float>>(10);
   CheckSort<Complex<int>>(10);
-  //CheckSort<Complex<Complex<float>>>(10);
+  // CheckSort<Complex<Complex<float>>>(10);
 
   return 0;
 }

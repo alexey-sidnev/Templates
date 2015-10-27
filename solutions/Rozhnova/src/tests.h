@@ -1,7 +1,7 @@
 #pragma once
 
-#ifndef TESTS_H
-#define TESTS_H
+#ifndef SOLUTIONS_ROZHNOVA_SRC_TESTS_H_
+#define SOLUTIONS_ROZHNOVA_SRC_TESTS_H_
 #include "Sorter.h"
 
 // Генерация элемента случайным образом
@@ -67,4 +67,4 @@ void CheckSort(int size) {
   delete[] mas;
 }
 
-#endif  // TESTS_H
+#endif  // SOLUTIONS_ROZHNOVA_SRC_TESTS_H_
