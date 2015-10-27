@@ -11,7 +11,7 @@ class Complex {
  public:
   Type re_, im_;
 
-  Complex(Type re = 0, Type im = 0): re_(re), im_(im)
+  explicit Complex(Type re = Type(0), Type im = Type(0)): re_(re), im_(im)
   {}
 
   std::ostream& Print(std::ostream& o) const {
