@@ -1,10 +1,23 @@
 #pragma once
-template <class Type>
 
+#ifndef SORTER_H
+#define SORTER_H
+template <class Type>
 bool comp(Type a1, Type a2)
 {
-	if (a1>a2) return true;
-	else return false;
+	if (a1>a2) 
+		return true;
+	else 
+		return false;
+}
+
+template <class Type>
+bool rav(Complex<Type> a1, Complex<Type> a2)
+{
+	if ((a1.re_ == a2.re_) && (a1.im_ == a2.im_)) 
+		return true;
+	else 
+		return false;
 }
 
 template <class Type>
@@ -19,6 +32,20 @@ bool comp(Complex<Type> a1, Complex<Type> a2)
 	return false;
 
 }
+
+template <class Type>
+bool comp(Complex<Complex<Type>> a1, Complex<Complex<Type>> a2)
+{
+	if (comp(a1.re_,a2.re_))
+		return true;
+	else
+		if (rav(a1.re_,a2.re_))
+			if (comp(a1.im_,a2.im_))
+				return true;
+	return false;
+
+}
+
 template <class Type>
 class Sorter
 {
@@ -37,3 +64,4 @@ public:
 	};
 };
 
+#endif
