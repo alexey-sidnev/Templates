@@ -23,7 +23,7 @@ template <class Type>
 bool myCompare(Complex<Complex<Type>> &a, Complex<Complex<Type>> &b) {
 	if (myCompare(a.re_, b.re_))
 		return true;
-	if ((a.re_.re_ == b.re_.re_) && (a.im_.im_ == b.im_.im_))
+	if ((a.re_.re_ == b.re_.re_) && (a.re_.im_ == b.re_.im_))
 		if (myCompare(a.im_, b.im_))
 		return true;
 	return false;
