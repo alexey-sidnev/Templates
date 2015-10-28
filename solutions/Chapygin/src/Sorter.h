@@ -7,11 +7,11 @@ bool compare(T max, T min) { if (max > min) { return true; } return false; }
 
 template<class T>
 bool compare(Complex<T> max, Complex<T> min) {
-  if (compare(max.re_, min.re_)) 
+  if (compare(max.re_, min.re_))
     return true;
-  else if (compare(min.re_, max.re_)) 
+  else if (compare(min.re_, max.re_))
     return false;
-  else if (compare(max.im_, min.im_)) 
+  else if (compare(max.im_, min.im_))
     return true;
 return false;
 }

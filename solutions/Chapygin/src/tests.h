@@ -35,8 +35,8 @@ void InitElement<char>(char *el) {
 template <class Type>
 void InitElement(Complex<Type> *el) {
   Type re, im;
-  InitElement(re);
-  InitElement(im);
+  InitElement(&re);
+  InitElement(&im);
   *el = Complex<Type>(re, im);
 }
 
@@ -44,7 +44,7 @@ void InitElement(Complex<Type> *el) {
 template <class Type>
 void InitArray(Type *mas, int size) {
   for (int i = 0; i < size; ++i)
-    InitElement(mas[i]);
+    InitElement(&mas[i]);
 }
 
 // Вывод массива на экран
