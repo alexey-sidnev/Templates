@@ -6,43 +6,43 @@
 
 // Генерация элемента случайным образом
 template <class Type>
-void InitElement(Type &el) {
-  el = Type(rand());
+void InitElement(Type *el) {
+  *el = Type(rand());
 }
 
 // Специализация для типа double
 template<>
-void InitElement<double>(double &el) {
-  el = (rand() / 2. - RAND_MAX) / (rand() + 1.);
+void InitElement<double>(double *el) {
+  *el = (rand() / 2. - RAND_MAX) / (rand() + 1.);
 }
 
 // Специализация для типа float
 template<>
-void InitElement<float>(float &el) {
-  el = (rand() / 2.f - RAND_MAX) / (rand() + 1.f);
+void InitElement<float>(float *el) {
+  *el = (rand() / 2.f - RAND_MAX) / (rand() + 1.f);
 }
 
 // Специализация для типа char
 // Только заглавные английские буквы
 template<>
-void InitElement<char>(char &el) {
-  el = rand() % 26 + 65;
+void InitElement<char>(char *el) {
+  *el = rand() % 26 + 65;
 }
 
 // Генерация элемента случайным образом типа Complex
 template <class Type>
-void InitElement(Complex<Type> &el) {
+void InitElement(Complex<Type> *el) {
   Type re, im;
-  InitElement(re);
-  InitElement(im);
-  el = Complex<Type>(re, im);
+  InitElement(&re);
+  InitElement(&im);
+  *el = Complex<Type>(re, im);
 }
 
 // Инициализация массива случайным образом
 template <class Type>
 void InitArray(Type *mas, int size) {
   for (int i = 0; i < size; ++i)
-    InitElement(mas[i]);
+    InitElement(&mas[i]);
 }
 
 // Вывод массива на экран

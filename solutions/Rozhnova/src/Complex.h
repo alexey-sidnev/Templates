@@ -9,20 +9,14 @@
 template <class Type>
 class Complex {
  public:
-  Type re_, im_;
-
-  Complex(Type re = 0, Type im = 0): re_(re), im_(im)
-  {}
-
-  std::ostream& Print(std::ostream& o) const {
-    o << "<"<< re_ << ", " << im_ << ">";
-    return o;
-  }
+    Type re_, im_;
+    explicit Complex(Type re = Type(0), Type im = Type(0)) : re_(re), im_(im) {}
 };
 
 template <class Type>
 std::ostream& operator<<(std::ostream& o, const Complex<Type>& instance) {
-  return instance.Print(o);
+	o << "<" << instance.re_ << "," << instance.im_ << ">";
+    return o;
 }
 
 #endif  // SOLUTIONS_ROZHNOVA_SRC_COMPLEX_H_

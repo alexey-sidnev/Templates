@@ -23,27 +23,28 @@ class Sorter {
 
 
 template <class Type>
-int compare(Type a, Type b) {
+int compare(const Type &a, const Type &b) {
     if (a < b)
         return 1;
     return 0;
 }
 
 template <class Type>
-int compare(Complex<Type> a, Complex <Type> b) {
+int compare(const Complex<Type> &a, const Complex <Type> &b) {
     if (a.re_ < b.re_ ) return 1;
     else
         if ((a.re_ == b.re_) && (a.im_ < b.im_))
             return 1;
-        else
-            return 0;
+    return 0;
 }
 
 template <class Type>
-int compare(Complex<Complex<Type>> a, Complex<Complex<Type>> b) {
-    if (compare(a.re_, b.re_)) return 1;
-    else
-        if ((a.re_.re_ == b.re_.re_) && (a.re_.im_ == b.re_.im_) && (compare(a.im_, b.im_)))
+int compare(const Complex<Complex<Type>> &a,
+    const Complex<Complex<Type>> &b) {
+    if (compare(a.re_, b.re_))
+        return 1;
+    if ((a.re_.re_ == b.re_.re_) && (a.re_.im_ == b.re_.im_) 
+            && (compare(a.im_, b.im_)))
             return 1;
     return 0;
 }
