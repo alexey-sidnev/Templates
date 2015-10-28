@@ -1,7 +1,7 @@
 #pragma once
 
-#ifndef TESTS_H
-#define TESTS_H
+#ifndef SOLUTIONS_CHAPYGIN_SRC_TESTS_H_
+#define SOLUTIONS_CHAPYGIN_SRC_TESTS_H_
 
 #include "Sorter.h"
 
@@ -69,4 +69,4 @@ void CheckSort(int size) {
   delete[] mas;
 }
 
-#endif  // TESTS_H
+#endif  // SOLUTIONS_CHAPYGIN_SRC_TESTS_H_
