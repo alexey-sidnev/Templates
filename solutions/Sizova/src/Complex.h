@@ -20,4 +20,4 @@ std::ostream& operator<<(std::ostream& o, const Complex<Type>& instance) {
   return o;
 }
 
-#endif  // SOLUTIONS_BASE_VERSION_SRC_COMPLEX_H_
+#endif  // SOLUTIONS_SIZOVA_SRC_COMPLEX_H_
