@@ -1,5 +1,6 @@
 #include "Complex.h"
 #include "tests.h"
+#include "sorter.h"
 #include <stdlib.h>
 #include <iostream>
 
@@ -13,7 +14,7 @@ int main() {
   CheckSort<double>(10);
   CheckSort<Complex<float>>(10);
   CheckSort<Complex<int>>(10);
-  //CheckSort<Complex<Complex<float>>>(10);
+  CheckSort<Complex<Complex<float>>>(10);
 
   return 0;
 }

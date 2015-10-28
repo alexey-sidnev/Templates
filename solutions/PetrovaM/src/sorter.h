@@ -3,16 +3,14 @@
 
 template <class Type>
 
-bool myCompare(Type a, Type b)
-{
+bool myCompare(Type a, Type b) {
 	if (a > b)
 		return true;
 	return false;
 }
 
 template <class Type>
-bool myCompare(Complex<Type> a, Complex<Type> b)
-{
+bool myCompare(Complex<Type> a, Complex<Type> b) {
 	if (a.re_ > b.re_)
 		return true;
 	if (a.re_ == b.re_)
@@ -22,9 +20,8 @@ bool myCompare(Complex<Type> a, Complex<Type> b)
 }
 
 template <class Type>
-class Sorter
-{
-public:
+class Sorter {
+ public:
 	static void sort(Type *a, int size) {
 		for(int i = 0; i < size; i++)
 			for(int j = i + 1; j < size; j++)
