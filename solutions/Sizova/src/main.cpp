@@ -2,10 +2,11 @@
 #include "tests.h"
 #include <stdlib.h>
 #include <iostream>
+#include <stdint.h> 
 
 int main() {
   srand(666);
-  CheckSort<short int>(10);
+  CheckSort<int16_t>(10);
   CheckSort<int>(10);
   CheckSort<char>(10);
   CheckSort<float>(10);
