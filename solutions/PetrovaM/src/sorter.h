@@ -3,18 +3,28 @@
 
 template <class Type>
 
-bool myCompare(Type a, Type b) {
+bool myCompare(Type &a, Type &b) {
 	if (a > b)
 		return true;
 	return false;
 }
 
 template <class Type>
-bool myCompare(Complex<Type> a, Complex<Type> b) {
+bool myCompare(Complex<Type> &a, Complex<Type> &b) {
 	if (a.re_ > b.re_)
 		return true;
 	if (a.re_ == b.re_)
 	 if (a.im_ > b.im_)
+		return true;
+	return false;
+}
+
+template <class Type>
+bool myCompare(Complex<Complex<Type>> &a, Complex<Complex<Type>> &b) {
+	if (myCompare(a.re_, b.re_))
+		return true;
+	if ((a.re_.re_ == b.re_.re_) && (a.im_.im_ == b.im_.im_))
+		if (myCompare(a.im_, b.im_))
 		return true;
 	return false;
 }
