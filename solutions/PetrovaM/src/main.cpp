@@ -7,7 +7,7 @@
 int main() {
   srand(666);
 
-  CheckSort<short>(10);
+  CheckSort<int16_t>(10);
   CheckSort<int>(10);
   CheckSort<char>(10);
   CheckSort<float>(10);
