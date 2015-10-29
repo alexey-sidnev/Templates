@@ -2,6 +2,7 @@
 #include "tests.h"
 #include <stdlib.h>
 #include <iostream>
+#include <stdint.h>
 
 int main() {
   srand(666);
