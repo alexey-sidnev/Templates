@@ -7,7 +7,7 @@
 template <class Type>
 
 bool myCompare(Type &a, Type &b) {
-	if (a > b)
+    if (a > b)
 		return true;
 	return false;
 }
