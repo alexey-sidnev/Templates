@@ -1,7 +1,7 @@
 #pragma once
 
-#ifndef SOLUTIONS_BASE_VERSION_SRC_TESTS_H_
-#define SOLUTIONS_BASE_VERSION_SRC_TESTS_H_
+#ifndef SOLUTIONS_PETROVAM_SRC_TESTS_H_
+#define SOLUTIONS_PETROVAM_SRC_TESTS_H_
 #include "sorter.h"
 
 // Генерация элемента случайным образом
@@ -67,4 +67,4 @@ void CheckSort(int size) {
   delete[] mas;
 }
 
-#endif  // SOLUTIONS_BASE_VERSION_SRC_TESTS_H_
+#endif  // SOLUTIONS_PETROVAM_SRC_TESTS_H_
