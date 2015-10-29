@@ -1,4 +1,7 @@
 #pragma once
+
+#ifndef SOLUTIONS_BASE_VERSION_SRC_SORTER_H_
+#define SOLUTIONS_BASE_VERSION_SRC_SORTER_H_
 #include "Complex.h"
 
 template <class Type>
@@ -43,3 +46,4 @@ class Sorter {
 				}
 	}
 };
+#endif // SOLUTIONS_BASE_VERSION_SRC_SORTER_H_

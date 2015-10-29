@@ -1,9 +1,8 @@
 #pragma once  // Just for Microsoft compiler
 
 // Include guard
-#ifndef SOLUTIONS_BASE_VERSION_SRC_COMPLEX_H_
-#define SOLUTIONS_BASE_VERSION_SRC_COMPLEX_H_
-
+#ifndef SOLUTIONS_PETROVAM_SRC_COMPLEX_H_
+#define SOLUTIONS_PETROVAM_SRC_COMPLEX_H_
 #include <iostream>
 
 template <class Type>
@@ -21,4 +20,4 @@ std::ostream& operator<<(std::ostream& o, const Complex<Type>& instance) {
   return o;
 }
 
-#endif  // SOLUTIONS_BASE_VERSION_SRC_COMPLEX_H_
+#endif  // SOLUTIONS_PETROVAM_SRC_COMPLEX_H_
