@@ -5,36 +5,36 @@
 template <class Type>
 bool comp(Type a1, Type a2) {
   if (a1 > a2)
-  return true;
+    return true;
   else
-  return false;
+    return false;
 }
 
 template <class Type>
 bool rav(Complex<Type> a1, Complex<Type> a2) {
   if ((a1.re_ == a2.re_) && (a1.im_ == a2.im_))
-  return true;
+    return true;
   else
-  return false;
+    return false;
 }
 
 template <class Type>
 bool comp(Complex<Type> a1, Complex<Type> a2) {
   if (a1.re_ > a2.re_)
-  return true;
+    return true;
   if (a1.re_ == a2.re_)
-  if (a1.im_ > a2.im_)
-  return true;
+    if (a1.im_ > a2.im_)
+      return true;
   return false;
 }
 
 template <class Type>
 bool comp(Complex<Complex<Type>> a1, Complex<Complex<Type>> a2) {
   if (comp(a1.re_, a2.re_))
-  return true;
+    return true;
   if (rav(a1.re_, a2.re_))
-  if (comp(a1.im_, a2.im_))
-  return true;
+    if (comp(a1.im_, a2.im_))
+      return true;
   return false;
 }
 
