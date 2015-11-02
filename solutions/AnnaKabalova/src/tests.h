@@ -41,14 +41,14 @@ void InitElement(Complex<Type> *el) {
 template <class Type>
 void InitArray(Type *mas, int size) {
   for (int i = 0; i < size; ++i)
-  InitElement(&mas[i]);
+    InitElement(&mas[i]);
 }
 
 // Вывод массива на экран
 template <class Type>
 void PrintArray(Type *mas, int size) {
   for (int i = 0; i < size; ++i)
-  std::cout << "  [" << i << "]=" << mas[i] << std::endl;
+    std::cout << "  [" << i << "]=" << mas[i] << std::endl;
 }
 
 // Проверка для заданного типа
